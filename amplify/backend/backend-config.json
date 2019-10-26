@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"amplifywebappb0c64b49": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"storage": {
+		"s3new": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

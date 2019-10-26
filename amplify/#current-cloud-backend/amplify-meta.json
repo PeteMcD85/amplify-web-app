@@ -1,0 +1,52 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-amplify-web-app-test-171604-authRole",
+			"UnauthRoleArn": "arn:aws:iam::901894052721:role/amplify-amplify-web-app-test-171604-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::901894052721:role/amplify-amplify-web-app-test-171604-authRole",
+			"Region": "us-west-2",
+			"DeploymentBucketName": "amplify-amplify-web-app-test-171604-deployment",
+			"UnauthRoleName": "amplify-amplify-web-app-test-171604-unauthRole",
+			"StackName": "amplify-amplify-web-app-test-171604",
+			"StackId": "arn:aws:cloudformation:us-west-2:901894052721:stack/amplify-amplify-web-app-test-171604/d2585430-f835-11e9-b504-0aa1d8d9d478"
+		}
+	},
+	"auth": {
+		"amplifywebappb0c64b49": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify-web-app-test-171604-deployment/amplify-cfn-templates/auth/amplifywebappb0c64b49-cloudformation-template.yml",
+				"logicalId": "authamplifywebappb0c64b49"
+			},
+			"lastPushTimeStamp": "2019-10-26T21:22:55.316Z",
+			"output": {
+				"AppClientSecret": "ld1effs623piv2rh0cf62lagc2rcfdlgmv73panlfl8v4psn46v",
+				"UserPoolId": "us-west-2_taukgNPb0",
+				"AppClientIDWeb": "o5kq1bt0424200pobgeuqaqb4",
+				"AppClientID": "119eo62ga3ls6j3997ch4laefb",
+				"IdentityPoolId": "us-west-2:4cd91572-981e-43a6-bff5-15633f997189",
+				"IdentityPoolName": "amplifywebappb0c64b49_identitypool_b0c64b49__test",
+				"UserPoolName": "amplifywebappb0c64b49_userpool_b0c64b49"
+			},
+			"lastPushDirHash": "Lpz9XVXWM46lR9E5WVaU3SCOO7E="
+		}
+	},
+	"storage": {
+		"s3new": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify-web-app-test-171604-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storages3new"
+			},
+			"lastPushTimeStamp": "2019-10-26T21:22:55.316Z",
+			"output": {
+				"BucketName": "s3newbucket-test",
+				"Region": "us-west-2"
+			},
+			"lastPushDirHash": "xDIXjR0ZofDpOTTTnzaHvfcKPas="
+		}
+	}
+}

@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const Items = require("./Items.js"),
+    itemsList = Items.items(),
+    mapItemsList = itemsList.map(item => (
+      <div className="cards">
+        <p>Name: {item.name}</p>
+        <p>Category: {item.category}</p>
+        <p>Brand: {item.brand}</p>
+        <p>Size: {item.size}</p>
+        <p>Thickness: {item.thickness}</p>
+        <p>Price: {item.sold_price}</p>
+      </div>
+    ));
+  console.log(itemsList);
+  return mapItemsList;
 }
 
 export default App;

@@ -1,12 +1,23 @@
+#root {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.cards {
+  text-align: center;
 }
 
-.App-header {
+.cards,
+p {
+  margin: 0;
+}
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -19,4 +30,4 @@
 
 .App-link {
   color: #09d3ac;
-}
+} */

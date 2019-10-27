@@ -1,21 +1,28 @@
 import React from "react";
 import "./App.css";
+import Items from "./Items.js";
 
-function App() {
-  const Items = require("./Items.js"),
-    itemsList = Items.items(),
-    mapItemsList = itemsList.map(item => (
-      <div className="cards">
-        <p>Name: {item.name}</p>
-        <p>Category: {item.category}</p>
-        <p>Brand: {item.brand}</p>
-        <p>Size: {item.size}</p>
-        <p>Thickness: {item.thickness}</p>
-        <p>Price: {item.sold_price}</p>
+class App extends React.Component {
+  // constructor() {}
+
+  render() {
+    return (
+      <div id="cards">
+        {Items.map((item, ind) => {
+          return (
+            <div className="card" key={ind}>
+              <p>Name: {item.name}</p>
+              <p>Category: {item.category}</p>
+              <p>Brand: {item.brand}</p>
+              <p>Size: {item.size}</p>
+              <p>Thickness: {item.thickness}</p>
+              <p>Price: ${Number(item.sold_price).toFixed(2)}</p>
+            </div>
+          );
+        })}
       </div>
-    ));
-  console.log(itemsList);
-  return mapItemsList;
+    );
+  }
 }
 
 export default App;

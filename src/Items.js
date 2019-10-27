@@ -1,6 +1,4 @@
-module.exports = {
-  items: function() {
-    return [
+const Items = [
       {
         id: 65,
         name: "Cola Amarilla",
@@ -25,7 +23,6 @@ module.exports = {
         sold_price: "26.0",
         active: true,
         inventory: 10,
-
         stock_number: ""
       },
       {
@@ -9058,5 +9055,6 @@ module.exports = {
         stock_number: ""
       }
     ];
-  }
-};
+
+
+export default Items;

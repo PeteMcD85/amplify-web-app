@@ -1,4 +1,4 @@
-const Items = [
+const ITEMS = [
       {
         id: 65,
         name: "Cola Amarilla",
@@ -9057,4 +9057,4 @@ const Items = [
     ];
 
 
-export default Items;
+export default ITEMS;
